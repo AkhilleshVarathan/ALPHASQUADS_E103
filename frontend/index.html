@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShadowForce</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- ===== Global Theme (Extracted from ShadowForceLogin) ===== -->
+    <style>
+      :root {
+        /* Background gradient (soft, premium) */
+        --bg-gradient: linear-gradient(
+          135deg,
+          #faf5ff,  /* purple-50 */
+          #fdf2f8,  /* pink-50 */
+          #eff6ff   /* blue-50 */
+        );
+
+        /* Card styling */
+        --card-bg: rgba(255, 255, 255, 0.85);
+
+        /* Text */
+        --text-main: #1f2937;   /* gray-800 */
+        --text-muted: #6b7280; /* gray-500 */
+
+        /* Accent colors */
+        --purple-main: #9333ea; /* purple-600 */
+        --pink-main: #db2777;   /* pink-600 */
+        --blue-main: #2563eb;   /* blue-600 */
+
+        /* Primary action gradient */
+        --btn-gradient: linear-gradient(
+          to right,
+          #9333ea,
+          #db2777,
+          #2563eb
+        );
+      }
+    </style>
+  </head>
+
+  <body
+    class="min-h-screen text-[var(--text-main)]"
+    style="background: var(--bg-gradient);"
+  >
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
